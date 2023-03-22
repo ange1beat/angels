@@ -1,6 +1,5 @@
 import { useState } from "react";
 import {Link} from 'react-router-dom';
-import logo from './images/logowhite.png'
 
 export default function Header() {
     const [navbar, setNavbar] = useState(false);
@@ -11,7 +10,7 @@ export default function Header() {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="/">
-                             <h2 className="text-2xl font-bold text-blue-400">VOLT</h2> 
+                             <h2 className="text-2xl font-bold text-white">ANGELS</h2> 
                         </Link>
                         <div className="md:hidden">
                             <button
@@ -58,17 +57,17 @@ export default function Header() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-white hover:text-blue-400">
-                                <a href="#mil">Military</a>
+                            <li className="text-white hover:text-purple-400">
+                                <a href="#mil">Description</a>
+                            </li>
+                            <li className="text-white hover:text-purple-400">
+                                <a href="#ser">Collection</a>
+                            </li>
+                            <li className="text-white hover:text-purple-400">
+                                <a href="#gar">Features</a>
                             </li>
                             <li className="text-white hover:text-blue-400">
-                                <a href="#ser">Service</a>
-                            </li>
-                            <li className="text-white hover:text-blue-400">
-                                <a href="#gar">Garden</a>
-                            </li>
-                            <li className="text-white hover:text-blue-400">
-                                <a href="#aut">Auto</a>
+                                <a href="#aut">Links</a>
                             </li>
                         </ul>
                     </div>
