@@ -9,6 +9,8 @@ import angel4 from './images/4_angel.png'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import MyModal from './MyModal'
+import Header from './Header'
+import back from './images/back.png'
 
 
 const Main = () => {
@@ -33,27 +35,34 @@ const Main = () => {
     }, [])
 
     return (
-        <div className='bg-black w-screen h-full flex flex-col items-center'>
+        <>
+        <Header />
+        <div className='bg-white w-full h-full flex flex-col items-center overflow-hidden'>
+            <img src={back} className='w-[100%] md:w-[100%] mt-[90%] md:mt-[5%] background-attachment: fixed z-0 opacity-50' />
+            <img src={back} className='w-[100%] mt-[120%] md:mt-[10%] background-attachment: fixed z-0 opacity-50 md:hidden' />
+            <img src={back} className='w-[100%] mt-[40%] md:mt-[10%] background-attachment: fixed z-0 opacity-50 md:hidden' />
+            <img src={back} className='w-[100%] mt-[170%] md:mt-[10%] background-attachment: fixed z-0 opacity-50 md:hidden' />
             <div className='flex justify-center items-center p-10'>
-                <img src={logo} className='w-[50%]'/>
             </div>
-            <div className='justify-center items-center text-white w-screen break-words p-10 text-center flex flex-col text-xl'>
-                <div className='p-2'>Not just a picture.</div>
-                <div className='p-2'>Choose your own guardian angel who will give you good luck. She will be yours and only yours.</div>
-                <div className='p-2 font-bold'>Only ten angels in the collection.</div>
+            <div className='justify-center items-center text-black w-screen break-words p-10 text-center flex flex-col text-xl z-10'>
+                <div className='p-2 font-bold'>Not just a picture.</div>
+                <div className='p-2 md:w-[50%]'>Choose your own goddess who will protect you from all the failures in the crypto market, she will give you good luck and strength, will help you in all your affairs. Each goddess has her own character, backstory, her own lore. We want to recreate a whole universe built around anime style, blockchain technology and fandom. When you buy your goddess, you get a future character who will interact in the metaverse, give you access to the discord community, and bring you closer to other project participants.</div>
             </div>
-            <div className='flex flex-col justify-center items-center'>
+            <div className='justify-center items-center text-black w-screen break-words p-10 text-center flex flex-col text-xl z-10'>
+                <div className='p-2 font-bold'>Collection</div>
+            </div>
+            <div className='flex flex-col justify-center items-center z-10 p-3 md:flex-row'>
                 <div className='flex flex-col p-[20px]'>
-                    <img onClick={() => showModal('Mari', 'The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection')} src={angel1} className='hover:scale-75'/>
+                    <img onClick={() => showModal('Mari', 'The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection')} src={angel1} className='shadow-blackBg'/>
                 </div>
                 <div className='flex flex-col p-[20px]'>
-                    <img onClick={() => showModal('Colesta', 'The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection')} src={angel2} className=''/>
+                    <img onClick={() => showModal('Colesta', 'The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection')} src={angel2} className='shadow-blackBg'/>
                 </div>
                 <div className='flex flex-col p-[20px]'>
-                    <img src={angel3} className=''/>
+                    <img src={angel3} className='shadow-blackBg'/>
                 </div>
                 <div className='flex flex-col p-[20px]'>
-                    <img src={angel4} className=''/>
+                    <img src={angel4} className='shadow-blackBg'/>
                 </div>
             </div>
             <div className='mt-10 mb-10'>
@@ -62,6 +71,7 @@ const Main = () => {
 
             <MyModal onClose={handleOnClose} visible={showMyModal} nick={showNick} text={showText}/>
         </div>
+        </>
     )
 }
 
