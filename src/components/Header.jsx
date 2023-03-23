@@ -69,7 +69,7 @@ export default function Header() {
                                 <a href="#gar">Roadmap</a>
                             </li>
                             <li className="text-black font-bold text-center hover:text-purple-400">
-                                <a href="#aut">Links</a>
+                                <a href="#aut">Team</a>
                             </li>
                         </ul>
                     </div>
