@@ -6,12 +6,12 @@ export default function Header() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-black text-white shadow fixed z-20">
+        <nav className="w-full bg-black text-white fixed z-20">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="/">
-                              <h2 className="text-2xl font-bold text-blue-700">YUZUKI</h2>  
+                              <h2 className="text-2xl font-bold text-white">YUZUKI</h2>  
                              {/* <img src={logomain} className='w-[150px]'/> */}
                         </Link>
                         <div className="md:hidden">
