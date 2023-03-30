@@ -45,28 +45,21 @@ const Main = () => {
 
     return (
         <>
-        <div className='bg-gradient-to-b from-violet-500 to-fuchsia-500 w-full h-full flex flex-col items-center overflow-hidden font-mono font-family: ui-monospace font-bold text-xl'>
+        <div className='bg-gradient-to-b from-violet-500 to-fuchsia-500 w-full h-full flex flex-col items-center overflow-hidden font-mono font-family: ui-monospace text-xl'>
             <div className='h-screen justify-center items-center text-white w-screen break-words pl-10 pr-10 text-center flex flex-col text-xl z-10'>
-            <div className='flex flex-row items-center text-3xl text-black'>
+            <div className='flex flex-row font-bold items-center text-3xl text-black'>
                 YUZUKI
             </div>
                 <div className='p-2 pt-10 font-mono font-family: ui-monospace md:w-[50%]'>Simplicity, beauty, elegance - it's about us</div>
             </div>
             <div className='justify-center items-center text-white w-screen break-words text-center flex flex-col text-xl z-10 border-solid border-b-4 border-white pb-5'>
-                <div className='p-2 font-bold'>Collections</div>
+                <div className='p-2 '>Collections</div>
             </div>
             <div className='flex flex-col justify-center items-center z-10 p-3 md:flex-row bg-black w-full text-white'>
                 <div>
-                    <img src={stargod} className='w-[300px] h-[100px] object-cover rounded'></img>
+                    <img src={stargod} onClick={() => showModal()} className='w-[300px] h-[100px] object-cover rounded'></img>
                 </div>
 
-
-                {/* <div className='flex flex-col p-[20px]'>
-                    <img onClick={() => showModal('Jishui', '')} src={angel1} className='shadow-blackBg hover: cursor-pointer'/>
-                </div>
-                <div className='flex flex-col p-[20px]'>
-                    <img onClick={() => showModal('Colesta', 'The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection The best girl in our collection')} src={angel2} className='shadow-blackBg hover: cursor-pointer'/>
-                </div> */}
                 </div>
             </div>
 
