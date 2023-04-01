@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'blackBg': '10px 10px 0px 0px #D135FF'
+        'blackBg': '5px 5px 0px 0px #D135FF'
       },
       'animation': {
         'text':'text 5s ease infinite',
