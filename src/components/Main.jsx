@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import logo from './images/logotip.png'
+import logo from './images/logostarlite.png'
 import slogan from './images/slogan.png'
 import cute from './images/meaning.png'
 import mean from './images/mean.png'
@@ -28,6 +28,8 @@ import value from './images/value.png'
 import collection1 from './images/collection1.png'
 import fallstar from './images/fallingstar.gif'
 import tg from './images/telega.png'
+import god1 from './images/1_angel.png'
+import god2 from './images/2_angel.png'
 
 
 const Main = () => {
@@ -53,13 +55,13 @@ const Main = () => {
 
     return (
         <>
-            <div className='bg-black w-full flex flex-col items-center'>
-                <div className='flex flex-row w-full justify-center text-white items-center md:gap-60 gap-6 font-mono	font-family: ui-monospace fixed bg-black'>
-                    <p className='cursor-pointer font-bold hover:text-purple-400'>Collections</p>
+            <div className='bg-black w-full flex flex-col items-center font-mono	font-family: ui-monospace'>
+                <div className='flex flex-row w-full justify-center text-white items-center md:gap-60 gap-6 font-mono	font-family: ui-monospace fixed bg-black z-20'>
+                    <a href='#col'><p className='cursor-pointer font-bold hover:text-purple-400'>Collection</p></a>
                     <img src={logo} className='w-[30%] md:w-[10%]'/>
-                    <p className='cursor-pointer font-bold hover:text-purple-400'>Information</p>
+                    <a href='#inf'><p className='cursor-pointer font-bold hover:text-purple-400'>Information</p></a>
                 </div>
-                <div className='flex flex-col justify-center items-center text-white pt-28 pr-10 pl-10 gap-5'>
+                <div id='inf'className='flex flex-col justify-center items-center text-white pt-28 pr-10 pl-10 gap-5'>
                     <img src={cosmo}/>
                     <img src={slogan} className='md:w-[40%]'/>
                     <img src={cute} className='w-[50%] md:w-[20%]'/>
@@ -67,14 +69,26 @@ const Main = () => {
                     <img src={value1} className='w-[50%] md:w-[20%]'/>
                     <img src={value} className='md:w-[40%]'/>
                 </div>
-                <div className='flex flex-col text-white font-mono	font-family: ui-monospace text-xl p-16'>
-                    Collections
+                <div className='flex flex-col justify-center items-center mt-[10%] text-white'>
+                    <p className='text-center p-5'>The light from the stars rushes at a speed of 299,792,458 m/s, but photons do not just disappear in space, they also create some creatures with special power, star goddesses will help you stay lucky and happy in your life and especially in the crypto market!</p>
                 </div>
-                <div className='flex flex-col justify-center items-center gap-5'>
-                    <Link to='/starlite'><img src={collection1}/></Link>
-                    <p className='text-white absolute mt-[100%] md:mt-[40%] md:text-2xl font-mono	font-family: ui-monospace'>Other collections coming soon</p>
-                    <img src={tg} className='absolute w-[10%] mt-[140%] md:mt-[75%] md:w-[5%]'/>
-                    <img src={fallstar} className='md:w-[1920px]'/>
+                <div id='col' className='flex flex-col justify-center items-center text-white p-8 gap-10'>
+                    <Link to='/'><img src={god2} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/'><img src={god1} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                </div>
+                <div className='pt-5 pb-5'>
+                <a href='https://app.ordin.finance/marketplace/'>
+                <div className='flex flex-col justify-center items-center text-white text-2xl pr-12 pl-12 border-2 border-white'>
+                    Purchase
+                </div>
+                </a>
+
+                </div>
+                <div className='flex flex-col justify-center items-center pt-5 pb-5'>
+                    <a href='https://t.me/YUZUKIART' className='justify-center items-center flex flex-col'><img src={tg} className='w-[40px]'/></a>
+                </div>
+                <div className='flex flex-col justify-center items-center text-white  pb-5 pt-5'>
+                    by YUZUKIART
                 </div>
             </div>
         </>

@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import Main from './components/Main';
-import Starlite from './components/Starlite'
 
 
 const App = () => {
@@ -8,7 +7,6 @@ const App = () => {
     <div>
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='/starlite' element={<Starlite />}/>
       </Routes>
     </div>
   );
