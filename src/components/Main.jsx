@@ -30,6 +30,8 @@ import fallstar from './images/fallingstar.gif'
 import tg from './images/telega.png'
 import god1 from './images/1_angel.png'
 import god2 from './images/2_angel.png'
+import god3 from './images/3_angel.png'
+import god4 from './images/4_angel.png'
 import main2 from './images/main2.png'
 
 
@@ -72,6 +74,8 @@ const Main = () => {
                 <div id='col' className='flex flex-col justify-center items-center text-white p-8 gap-10 z-10 md:flex-row'>
                     <Link to='/felicia' className='md:w-[30%]'><img src={god2} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
                     <Link to='/' className='md:w-[30%]'><img src={god1} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/' className='md:w-[30%]'><img src={god3} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/' className='md:w-[30%]'><img src={god4} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
                 </div>
                 <div className='pt-5 pb-5'>
                 <a href='https://app.ordin.finance/marketplace/'>
