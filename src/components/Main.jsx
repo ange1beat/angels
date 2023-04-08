@@ -70,7 +70,7 @@ const Main = () => {
                     <p className='text-center p-5 md:pl-72 md:pr-72 md:text-2xl'>The light from the stars rushes at a speed of 299,792,458 m/s, but photons do not just disappear in space, they also create some creatures with special power, star goddesses will help you stay lucky and happy in your life and especially in the crypto market!</p>
                 </div>
                 <div id='col' className='flex flex-col justify-center items-center text-white p-8 gap-10 z-10 md:flex-row'>
-                    <Link to='/loli' className='md:w-[30%]'><img src={god2} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/felicia' className='md:w-[30%]'><img src={god2} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
                     <Link to='/' className='md:w-[30%]'><img src={god1} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
                 </div>
                 <div className='pt-5 pb-5'>

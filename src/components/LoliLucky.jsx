@@ -14,10 +14,10 @@ const LoliLucky = () => {
                     <img src={god2} className='p-5 md:w-[40%]'/>
                     <div className="flex flex-col justify-center items-center">
                         <div className="font-bold md:text-3xl">
-                            Loli Luck
+                            Felicia
                         </div>
                         <div className="text-center p-5 md:pr-72 md:pl-72 md:text-2xl">
-                            The best girl the best girl The best girl the best girl The best girl the best girl The best girl the best girl The best girl the best girl The best girl the best girl The best girl the best girl
+                        A sweet goddess is a girl who brings good luck, has incredible beauty and radiates light and warmth. She is dressed in mystical clothes that she received from another goddess. Her long hair falls over her shoulders in soft waves, and her eyes sparkle bright like the stars in the night sky. She always smiles and fills everyone around with light and joy with her smile. Her presence reminds us that there are many wonderful and amazing things in life, and that luck can come at any moment.
                         </div>
                         <div className='pt-10 pb-10'>
                             <a href='https://ordinals.hiro.so/inscription/e4763ed3c212d8dcc28b2a868f93b08c786fa9e13977895caec812398dd2349fi0'>
