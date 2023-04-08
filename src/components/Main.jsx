@@ -3,7 +3,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import logo from './images/logostarlite.png'
 import slogan from './images/slogan.png'
-import cute from './images/meaning.png'
+import cute from './images/cute.gif'
 import mean from './images/mean.png'
 import angel1 from './images/1_angel.png'
 import angel2 from './images/2_angel.png'
@@ -24,12 +24,13 @@ import back3 from './images/back3.jpg'
 import back4 from './images/back4.png'
 import stargod from './images/stargodess.png'
 import value1 from './images/pngwing.png'
-import value from './images/value.png'
+import value from './images/main.png'
 import collection1 from './images/collection1.png'
 import fallstar from './images/fallingstar.gif'
 import tg from './images/telega.png'
 import god1 from './images/1_angel.png'
 import god2 from './images/2_angel.png'
+import main2 from './images/main2.png'
 
 
 const Main = () => {
@@ -61,24 +62,20 @@ const Main = () => {
                     <img src={logo} className='w-[30%] md:w-[10%]'/>
                     <a href='#inf'><p className='cursor-pointer font-bold hover:text-purple-400'>Information</p></a>
                 </div>
-                <div id='inf'className='flex flex-col justify-center items-center text-white pt-28 pr-10 pl-10 gap-5'>
-                    <img src={cosmo}/>
-                    <img src={slogan} className='md:w-[40%]'/>
-                    <img src={cute} className='w-[50%] md:w-[20%]'/>
-                    <img src={mean} className='md:w-[40%]'/>
-                    <img src={value1} className='w-[50%] md:w-[20%]'/>
-                    <img src={value} className='md:w-[40%]'/>
+                <div id='inf'className='flex flex-col justify-center items-center pt-10'>
+                    <img src={value} className='md:hidden'/>
+                    <img src={main2} className='hidden md:flex'/>
                 </div>
-                <div className='flex flex-col justify-center items-center mt-[10%] text-white'>
-                    <p className='text-center p-5'>The light from the stars rushes at a speed of 299,792,458 m/s, but photons do not just disappear in space, they also create some creatures with special power, star goddesses will help you stay lucky and happy in your life and especially in the crypto market!</p>
+                <div className='flex flex-col justify-center items-center mt-[10%] text-white md:mt-[5%]'>
+                    <p className='text-center p-5 md:pl-72 md:pr-72 md:text-2xl'>The light from the stars rushes at a speed of 299,792,458 m/s, but photons do not just disappear in space, they also create some creatures with special power, star goddesses will help you stay lucky and happy in your life and especially in the crypto market!</p>
                 </div>
-                <div id='col' className='flex flex-col justify-center items-center text-white p-8 gap-10'>
-                    <Link to='/'><img src={god2} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
-                    <Link to='/'><img src={god1} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                <div id='col' className='flex flex-col justify-center items-center text-white p-8 gap-10 z-10 md:flex-row'>
+                    <Link to='/loli' className='md:w-[30%]'><img src={god2} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/' className='md:w-[30%]'><img src={god1} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
                 </div>
                 <div className='pt-5 pb-5'>
                 <a href='https://app.ordin.finance/marketplace/'>
-                <div className='flex flex-col justify-center items-center text-white text-2xl pr-12 pl-12 border-2 border-white'>
+                <div className='flex flex-col justify-center items-center text-white text-2xl pr-12 pl-12 border-2 border-white hover:text-purple-400 hover:border-purple-400'>
                     Purchase
                 </div>
                 </a>
