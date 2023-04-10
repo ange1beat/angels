@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from './images/logostarlite.png'
+import logo from './images/logotip.png'
 import god2 from './images/2_angel.png'
 
 const LoliLucky = () => {

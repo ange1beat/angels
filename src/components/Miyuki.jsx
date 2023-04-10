@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from './images/logostarlite.png'
+import logo from './images/logotip.png'
 import god3 from './images/3_angel.png'
 
 const Miyuki = () => {

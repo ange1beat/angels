@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import logo from './images/logostarlite.png'
+import logo from './images/logotip.png'
 import slogan from './images/slogan.png'
 import cute from './images/cute.gif'
 import mean from './images/mean.png'
@@ -87,9 +87,6 @@ const Main = () => {
                 </div>
                 <div className='flex flex-col justify-center items-center pt-5 pb-5'>
                     <a href='https://t.me/YUZUKIART' className='justify-center items-center flex flex-col'><img src={tg} className='w-[40px]'/></a>
-                </div>
-                <div className='flex flex-col justify-center items-center text-white  pb-5 pt-5'>
-                    by YUZUKIART
                 </div>
             </div>
         </>
