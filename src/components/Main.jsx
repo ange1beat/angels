@@ -32,6 +32,12 @@ import god1 from './images/1_angel.png'
 import god2 from './images/2_angel.png'
 import god3 from './images/3_angel.png'
 import god4 from './images/4_angel.png'
+import god5 from './images/5_angel.png'
+import god6 from './images/6_angel.png'
+import god7 from './images/7_angel.png'
+import god8 from './images/8_angel.png'
+import god9 from './images/9_angel.png'
+import god10 from './images/10_angel.png'
 import main2 from './images/main2.png'
 
 
@@ -71,14 +77,21 @@ const Main = () => {
                 <div className='flex flex-col justify-center items-center mt-[10%] text-white md:mt-[5%]'>
                     <p className='text-center p-5 md:pl-72 md:pr-72 md:text-2xl'>The light from the stars rushes at a speed of 299,792,458 m/s, but photons do not just disappear in space, they also create some creatures with special power, star goddesses will help you stay lucky and happy in your life and especially in the crypto market!</p>
                 </div>
-                <div id='col' className='flex flex-col justify-center items-center text-white p-8 gap-10 z-10 md:flex-row'>
-                    <Link to='/felicia' className='md:w-[30%]'><img src={god2} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
-                    <Link to='/haruki' className='md:w-[30%]'><img src={god1} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
-                    <Link to='/miyuki' className='md:w-[30%]'><img src={god3} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
-                    <Link to='/kyra' className='md:w-[30%]'><img src={god4} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                <div id='col' className='flex flex-col justify-center items-center text-white p-8 gap-10 z-10 md:flex-wrap md:w-[60%] md:flex-row'>
+                    <Link to='/felicia' className='md:w-[30%] hover:opacity-50'><img src={god2} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/haruki' className='md:w-[30%] hover:opacity-50'><img src={god1} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/miyuki' className='md:w-[30%] hover:opacity-50'><img src={god3} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/kyra' className='md:w-[30%] hover:opacity-50'><img src={god4} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/necro' className='md:w-[30%] hover:opacity-50'><img src={god5} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/elfia' className='md:w-[30%] hover:opacity-50'><img src={god6} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/star' className='md:w-[30%] hover:opacity-50'><img src={god7} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/aqua' className='md:w-[30%] hover:opacity-50'><img src={god8} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/gold' className='md:w-[30%] hover:opacity-50'><img src={god9} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+                    <Link to='/lightning' className='md:w-[30%] hover:opacity-50'><img src={god10} className='shadow-blackBg z-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"/></Link>
+
                 </div>
                 <div className='pt-5 pb-5'>
-                <a href='https://app.ordin.finance/marketplace/'>
+                <a href='https://gamma.io/'>
                 <div className='flex flex-col justify-center items-center text-white text-2xl pr-12 pl-12 border-2 border-white hover:text-purple-400 hover:border-purple-400'>
                     Purchase
                 </div>
