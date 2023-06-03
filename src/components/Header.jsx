@@ -1,22 +1,23 @@
 import { useState } from "react";
 import {Link} from 'react-router-dom';
-import logomain from './images/logomain.png'
+import logo from './images/logo.png'
 
 export default function Header() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-black text-white fixed z-20">
+        <nav className="w-full bg-black text-white shadow fixed z-10">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to="/">
-                              <h2 className="text-2xl font-bold text-white">YUZUKI</h2>  
-                             {/* <img src={logomain} className='w-[150px]'/> */}
+                            <div className="flex flex-row justify-center items-center gap-3" >
+                            <img src={logo} className='md:w-[40px] w-[30px]'/> <h2 className="font-bold md:text-xl text-2xs">Котельники №1</h2>
+                            </div>
                         </Link>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-white rounded-md outline-none focus:text-blue-700"
+                                className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -59,17 +60,17 @@ export default function Header() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-white font-bold text-center hover:text-blue-700">
-                                <a href="#mil">Description</a>
+                            <li className="text-white font-bold hover:text-green-400">
+                                <a href="#mil">Новости</a>
                             </li>
-                            <li className="text-white font-bold text-center hover:text-blue-700">
-                                <a href="#ser">Collection</a>
+                            <li className="text-white font-bold hover:text-green-400">
+                                <a href="#ser">Соцсети</a>
                             </li>
-                            <li className="text-white font-bold text-center hover:text-blue-700">
-                                <a href="#gar">Roadmap</a>
+                            <li className="text-white font-bold hover:text-green-400">
+                                <a href="#gar">Контакты</a>
                             </li>
-                            <li className="text-white font-bold text-center hover:text-blue-700">
-                                <a href="#aut">Team</a>
+                            <li className="text-white font-bold hover:text-green-400">
+                                <a href="#aut">О нас</a>
                             </li>
                         </ul>
                     </div>
