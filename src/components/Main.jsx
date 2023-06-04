@@ -7,6 +7,9 @@ import { useState } from 'react';
 import tg from './images/telega.png'
 import Header from './Header'
 import girl from './images/6_angel.png'
+import nariks from './images/nariks.jpg'
+import Narkiks from './Nariks';
+import lamba1 from './images/lamba1.jpg'
 
 const Main = () => {
 
@@ -19,31 +22,18 @@ const Main = () => {
             <Header/>
             <div className='bg-black w-full flex flex-col font-mono	font-family: ui-monospace'>
                 <div className='md:mt-[5%] mt-[20%] flex flex-row w-[100%] p-3 gap-3 flex-wrap justify-center'>
-                    <div className='bg-white text-center text-black w-[300px] h-[400px] flex flex-col'>
-                        <img src={girl} className='w-[300px]'/>
-                        <div className='bg-white font-bold'>Заголовок новости</div>
-                        <div className='bg-white'>Текст новости Текст новости Текст новости Текст новости</div>
+                    <Link to='news1'>
+                    <div className='bg-white text-center text-black w-[300px] h-[100%] flex flex-col'>
+                        <img src={nariks} className='w-[300px] h-[250px]'/>
+                        <div className='bg-white font-bold'>Заполонили площадку мужчины, которые роются в палисадниках и странно себя ведут</div>
                     </div>
-                    <div className='bg-white text-center text-black w-[300px] h-[400px] flex flex-col'>
-                        <img src={girl} className='w-[300px]'/>
-                        <div className='bg-white font-bold'>Заголовок новости</div>
-                        <div className='bg-white'>Текст новости Текст новости Текст новости Текст новости</div>
+                    </Link>
+                    <Link to='news2'>
+                    <div className='bg-white text-center text-black w-[300px] h-[100%] flex flex-col'>
+                        <img src={lamba1} className='w-[300px]  h-[250px]'/>
+                        <div className='bg-white font-bold'>Ламборджини столкнулась с легковушкой в Котельниках, сильно пострадав [ВИДЕО]</div>
                     </div>
-                    <div className='bg-white text-center text-black w-[300px] h-[400px] flex flex-col'>
-                        <img src={girl} className='w-[300px]'/>
-                        <div className='bg-white font-bold'>Заголовок новости</div>
-                        <div className='bg-white'>Текст новости Текст новости Текст новости Текст новости</div>
-                    </div>
-                    <div className='bg-white text-center text-black w-[300px] h-[400px] flex flex-col'>
-                        <img src={girl} className='w-[300px]'/>
-                        <div className='bg-white font-bold'>Заголовок новости</div>
-                        <div className='bg-white'>Текст новости Текст новости Текст новости Текст новости</div>
-                    </div>
-                    <div className='bg-white text-center text-black w-[300px] h-[400px] flex flex-col'>
-                        <img src={girl} className='w-[300px]'/>
-                        <div className='bg-white font-bold'>Заголовок новости</div>
-                        <div className='bg-white'>Текст новости Текст новости Текст новости Текст новости</div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </>
