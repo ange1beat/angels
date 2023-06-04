@@ -9,7 +9,7 @@ const Lamba = () => {
                     <video width="750" height="500" controls >
                         <source src={lamba} type="video/mp4"/>
                     </video>
-                    <div className="text-center p-6 w-[50%]">
+                    <div className="text-center p-6 md:w-[50%] w-[90%]">
                     Ламборджини столкнулась с легковушкой в Котельниках, сильно пострадав
                     </div>
                 </div>
